@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+ - lts/* 
+before_script:
+  -npm install
+script:
+  # Run test script
+  - npm test
+  # Run linting
+  - npm run lint
